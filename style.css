@@ -1,0 +1,50 @@
+:root {
+    --color-grey: #808080;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'nav'
+    'main';
+}
+
+html {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Navbar */
+#navbar {
+    grid-area: nav;
+}
+
+#navbar header {
+    padding: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#navbar li {
+    padding: 0.5rem 1rem;
+    border-top: 1px solid var(--color-grey);
+    list-style: none;
+}
