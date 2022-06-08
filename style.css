@@ -98,3 +98,16 @@ section p {
 section li {
     margin: 1rem 0 0 3rem;
 }
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre-line;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 0.9375rem;
+	margin: 0.625rem;
+	border-radius: 5px;
+}
