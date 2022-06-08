@@ -1,5 +1,6 @@
 :root {
     --color-grey: #808080;
+    --color-black: #000;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
 
 html {
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -33,6 +34,7 @@ html {
 #navbar header {
     padding: 0.7rem;
     text-align: center;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -69,4 +71,30 @@ html {
     #navbar a {
         padding: 0.5rem 1rem;
     }
+}
+
+/* MAIN CONTAINER */
+
+#main-doc {
+    padding: 2rem;
+    color: var(--color-grey);
+}
+
+section header {
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+section article {
+    margin: 1rem;
+}
+
+section p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section li {
+    margin: 1rem 0 0 3rem;
 }
