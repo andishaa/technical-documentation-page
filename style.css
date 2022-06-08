@@ -12,10 +12,9 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    'nav'
-    'main';
+    grid-template-areas:
+        'nav'
+        'main';
 }
 
 html {
@@ -28,6 +27,7 @@ html {
 /* Navbar */
 #navbar {
     grid-area: nav;
+    text-align: center;
 }
 
 #navbar header {
@@ -40,11 +40,33 @@ html {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
+    color: var(--color-grey);
+}
+
+#navbar a:hover {
+    color: inherit;
 }
 
 #navbar li {
     border-top: 1px solid var(--color-grey);
     list-style: none;
     width: 100%;
+}
+
+@media screen and (min-width: 672px) {
+    body {
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'nav main';
+    }
+
+    #navbar {
+        border-right: 3px solid var(--color-grey);
+        text-align: left;
+    }
+
+    #navbar a {
+        padding: 0.5rem 1rem;
+    }
 }
