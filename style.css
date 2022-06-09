@@ -76,8 +76,9 @@ html {
 /* MAIN CONTAINER */
 
 #main-doc {
-    padding: 2rem;
+    padding: 0.5rem;
     color: var(--color-grey);
+    width: 100vw;
 }
 
 section header {
@@ -88,6 +89,7 @@ section header {
 
 section article {
     margin: 1rem;
+    font-size: 0.9375rem;
 }
 
 section p {
@@ -95,26 +97,29 @@ section p {
     margin-bottom: 1rem;
 }
 
-section li {
-    margin: 1rem 0 0 3rem;
+section ul {
+    margin: 1rem 0 0 2rem;
 }
 
 code {
-	display: block;
-	text-align: left;
-	white-space: pre-line;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 2;
-	background-color: #f7f7f7;
-	padding: 0.9375rem;
-	margin: 0.625rem;
-	border-radius: 5px;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 0.9375rem;
+    margin: 0.625rem;
+    border-radius: 5px;
 }
 
-@media screen and (min-width: 672px){
+@media screen and (min-width: 672px) {
+
     /*add overflow so that the nav stays fixed on the left on bigger screens */
     #main-doc {
         overflow-y: auto;
+        padding: 2rem;
+        width: 100%;
     }
 }
